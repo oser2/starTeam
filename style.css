@@ -50,13 +50,16 @@ footer {
 }
 
 .player-card {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: flex;
   padding: 1.3rem;
   margin: 1.2rem;
-  width: 300px;
-  height: 300px;
-  color: white;
-  text-shadow: 1px 0 1px black, 0px 1px 1px black, -1px 0 1px black;
-  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  width: 540px;
+  height: 540px;
+  background-color: #000;
+  overflow: hidden;
 }
 
 @media (max-width: 768px) {
@@ -72,7 +75,6 @@ footer {
     background-repeat: no-repeat;
 }
 #forward{
-    background-image: url(./images/forward.jpg);
     background-position: bottom center;
     background-size: 100% 150px;
     background-repeat: no-repeat;
@@ -89,3 +91,56 @@ footer {
     background-size: 100% 150px;
     background-repeat: no-repeat;
 }
+.decor{
+  height: 560px;
+  width: 560px;
+  margin-left: -20px;
+  margin-top: -20px;
+}
+
+.mask{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(196, 196, 196, 0.1);
+  backdrop-filter: grayscale(100%);
+}
+.badge{
+  position: relative;
+  width: 272px;
+  height: 433.5px;
+  position: absolute;
+  background-image: url(./images/badge.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bar{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 75px;
+  height: 190px;
+  background: #ffffff;
+  top: 29px;
+  left: 22.5px;
+}
+.photo{
+  position: relative;
+  width: 272px;
+  height: 230px;
+}
+.photo img{
+  position: absolute;
+  width: 100%;
+  top: 52px;
+  left: 0;
+}
+
+table{
+  width: 272px;
+  padding-inline: 41px;
+}
+
