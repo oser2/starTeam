@@ -1,0 +1,91 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --dark-grey: #0a0a23;
+  --light-grey: #f5f6f7;
+  --white: #ffffff;
+  --black: #000;
+}
+
+body {
+  background-color: var(--dark-grey);
+  text-align: center;
+  padding: 10px;
+}
+
+.title,
+.options-label,
+.team-stats,
+footer {
+  color: var(--white);
+}
+
+.title {
+  margin: 1.3rem 0;
+}
+
+.team-stats {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-size: 1.3rem;
+  margin: 1.2rem 0;
+}
+
+.options-label {
+  font-size: 1.2rem;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.player-card {
+  padding: 1.3rem;
+  margin: 1.2rem;
+  width: 300px;
+  height: 300px;
+  color: white;
+  text-shadow: 1px 0 1px black, 0px 1px 1px black, -1px 0 1px black;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+@media (max-width: 768px) {
+  .team-stats {
+    flex-direction: column;
+  }
+}
+
+#goalkeeper{
+    background-image: url(./images/goalkeeper.jpg);
+    background-position: bottom center;
+    background-size: 100% 150px;
+    background-repeat: no-repeat;
+}
+#forward{
+    background-image: url(./images/forward.jpg);
+    background-position: bottom center;
+    background-size: 100% 150px;
+    background-repeat: no-repeat;
+}
+#midfielder{
+    background-image: url(./images/midfielder.jpg);
+    background-position: bottom center;
+    background-size: 100% 150px;
+    background-repeat: no-repeat;
+}
+#defender{
+    background-image: url(./images/defender.jpg);
+    background-position: bottom center;
+    background-size: 100% 150px;
+    background-repeat: no-repeat;
+}
